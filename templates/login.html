@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column; /* Align items vertically */
+        }
+        .login-container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 40px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 400px; /* Added to limit the width */
+            margin-top: 20px; /* Added margin-top */
+        }
+        .text-section {
+            text-align: center;
+            margin-bottom: 20px; /* Added for spacing */
+        }
+        .login-container h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .login-container h2 {
+            color: #666;
+            margin-bottom: 30px;
+        }
+        .login-container label {
+            display: block;
+            margin-bottom: 10px;
+            color: #555;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        .login-container button {
+            background-color: #4caf50;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        .login-container button:hover {
+            background-color: #45a049;
+        }
+        .login-container small {
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="text-section">
+        <p>.</p>
+    </div>
+    <div class="login-container">
+        <h1>Welcome to Lakshya CTF!</h1>
+        <p>Continue your journey in the ultimate CTF challenge!</p>
+        <p>To continue, every Player needs to login to access their account:</p>
+        <div class="login-section">
+            <h2>Login</h2>
+            <form action="#" method="post">
+                <div>
+                    <label for="user">User ID:</label>
+                    <input type="text" id="user" name="user" required>
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" maxlength="10" required>
+                </div>
+                <div>
+                    <button type="submit">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+
+<!-- http://127.0.0.1:5000/asdfghjkl -->
